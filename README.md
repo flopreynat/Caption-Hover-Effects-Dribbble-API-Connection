@@ -1,4 +1,4 @@
-Caption-Hover-Effects-Dribbble-API-Connection
+Caption Hover Effects & Dribbble API Connection
 =============================================
 
 When Codrops released their article on <a href="http://tympanus.net/codrops/2013/06/18/caption-hover-effects/" target="_blank">Caption Hover Effects</a>, I was immediatly inspired to take it one step further and connect it to the Dribbble API.
