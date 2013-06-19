@@ -6,3 +6,5 @@ When Codrops released their article on <a href="http://tympanus.net/codrops/2013
 As I knew close to nothing about API and since I don't like dwelling too long on jquery/javascript issues -- since I'm a CSS boy -- , I did my best to get the thing working. It was a real challenge to me, so please cut me some slack. I'm sure it can be done many other ways, and many better ways, but as I made it work in the end, it just suits me fine.
 
 Since I'm a novice in using API's and ain't no much of an expert in js, I'd love to hear your remarks though.
+
+<a href="http://shoogledesigns.com/blog/blog/2013/06/19/dribbble-api">Tutorial</a> and <a href="http://shoogledesigns.com/demos/Caption-Hover-Effects-Dribbble-API-Connection/">demo</a>.
