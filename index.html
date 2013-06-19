@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Caption Hover Effects and Dribbble API Connection</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops and shoogledesigns" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+			  <script>
+	// DOM Ready
+	   
+	   $(function() {
+
+	   		var username = "shoogledesigns"  // dribbble username here
+		   	
+		   	$.getJSON('http://api.dribbble.com/players/' + username + '/shots/?callback=?', function(json) {
+		   		
+		   		console.log(json.shots);
+		   	
+
+		   			for (var i = 0; i < 6; i++) { // Maximum Number of shots here
+		
+			   		
+			   		$('ul').append("<li><figure><img src='" + json.shots[i].image_url + "'><figcaption><h3>" + json.shots[i].title + "</h3><span>♥ " + json.shots[i].likes_count + "</span><a href='" + json.shots[i].url + "'>Details</a></figcaption></figure></li>"
+			   		);
+			   	};
+
+			});
+		});
+	  </script>
+	</head>
+	<body>
+		<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<p align="center">Tweaked by <a href="http://shoogledesigns.com">@shoogledesigns</a> but greatly inspired by <a href="http://tympanus.net/codrops/">@codrops</a> and their article on <a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=15469">CAPTION HOVER EFFECTS</a></p>
+			</div>
+		<div class="container demo-3">
+			</header>
+			<ul class="grid cs-style-4">
+			</ul>
+		</div><!-- /container -->
+		<script src="js/toucheffects.js"></script>
+	</body>
+</html>
